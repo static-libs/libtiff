@@ -2,6 +2,10 @@
 
 retval=0
 
+export CFLAGS="-O3 -fPIE -fPIC -I/usr/include"
+export CXXFLAGS="-O3 -fPIE -fPIC -I/usr/include"
+export PKG_CONFIG_PATH="/opt/dev/glibc-2.27/lib/pkgconfig:${PKG_CONFIG_PATH}"
+
 set -x
 
 case `uname` in
